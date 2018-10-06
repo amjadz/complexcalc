@@ -40,7 +40,7 @@ class Calculator {
     
     // Multiply Multiple Numbers 
     func multiply(_ args: [Int]) -> Int {
-        var multiply = 0;
+        var multiply = 1;
         
         for numbers in args {
             multiply *= numbers
@@ -97,5 +97,13 @@ class Calculator {
         return (lhs.0 - rhs.0, lhs.1 - rhs.1)
     }
     
+    // Point Addition with x and y
+    func add(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
+        return ["x": lhs["x"]! + rhs["x"]!, "y": lhs["y"]! +  rhs["y"]!]
+    }
     
+    // Point Subtraction with x and y
+    func subtract(lhs: [String: Int], rhs: [String: Int]) -> [String: Int] {
+        return ["x": lhs["x"]! - rhs["x"]!, "y": lhs["y"]! -  rhs["y"]!]
+    }
 }
