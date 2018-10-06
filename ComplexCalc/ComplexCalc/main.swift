@@ -14,7 +14,6 @@ let calc = Calculator()  // Don't change this declaration name; it's used in all
 
 // ====> Add your own tests here if you wish <====
 
-
 // ====> Do not modify code in this section <====
 assert(calc.add(lhs: 2, rhs: 2) == 4)
 assert(calc.subtract(lhs: 2, rhs: 2) == 0)
