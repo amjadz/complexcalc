@@ -69,10 +69,22 @@ class Calculator {
         }
         
         return sum / average
-        
     }
     
+    // Simple Math Operations
+    func mathOp(lhs: Int, rhs: Int, op:(Int, Int) -> Int) -> Int {
+        return op(lhs, rhs)
+    }
     
+    // Complex Math Operations
+    func mathOp(args: [Int], beg: Int, op:(Int, Int) -> Int) -> Int {
+        var variable = beg
+        for numbers in args {
+            variable = op(numbers, variable)
+            
+        }
+        return variable
+    }
     
     
 }
